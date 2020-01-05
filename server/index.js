@@ -21,7 +21,6 @@ app.post("/upload", (req, res) => {
     if (err) {
       return res.status(400).send({ error: err });
     }
-
     const { originalFilename, path } = files.file[0];
 
     return fs.rename(path, `${folderPath}${originalFilename}`, error => {
