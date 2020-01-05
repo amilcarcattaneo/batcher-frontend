@@ -1,1 +1,3 @@
 # node-uploader
+
+npm start
